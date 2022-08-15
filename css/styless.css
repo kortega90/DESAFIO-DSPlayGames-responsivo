@@ -15,20 +15,26 @@
   margin: 0;
   padding: 0;
 }
-
 header {
   padding: 14px 10px;
   background-color: var(--color-green);
+  width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
   color: var(--color-Whiter);
+  position: fixed;
 }
+
 
 .container {
   width: 100%;
   max-width: 990px;
   margin: 0 auto;
+}
+
+.null-px {
+font-size: 0;
 }
 
 .container-header {
@@ -55,14 +61,12 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
-.container-header li {
-  /* margin: 0 29px 0 0; */
-}
+
 .menu-items {
   list-style: none;
 }
 .container-news {
-  padding: 40px 10px;
+  padding: 140px 10px 40px 10px;
   background-color: var(--color-Whiter);
   color: var(--text-gray);
   display: flex;
@@ -100,6 +104,7 @@ header {
   height: 21px;
   font-size: 0.875rem;
   color: var(--color-red);
+  cursor: pointer;
 }
 .Green-color {
   color: var(--color-green);
@@ -121,10 +126,12 @@ header {
   font-size: 18px;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .container-gamer {
   width: 100%;
+  min-width: 320px;
   padding: 12px 10px;
   background-color: var(--color-form);
   color: var(--text-gray);
@@ -132,25 +139,38 @@ header {
 .container-gamer h2 {
   display: flex;
   justify-content: center;
+  margin-bottom: 28px;
+  margin-top: 28px;
+}
+
+.box-gamer-aling {
+
+}
+.box-gamer-aling-center{
+display: flex;
+flex-wrap: wrap;
 }
 
 .box-gamer {
+  width: 100%;
+  max-width: 300px;
+  height: 326px;
   background-color: var(--color-Whiter);
   border-radius: 8px;
   margin-bottom: 28px;
+  margin-right: 28px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
+
 .box-gamer img {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 168.54px;
   border-radius: 8px 8px 0 0;
 }
 
-
 .content-box div {
-  width: 100%;
+  width: 300px;
   height: 157px;
   display: flex;
   flex-direction: column;
@@ -167,9 +187,9 @@ header {
   margin-top: 13px;
 }
 
+
 #signUp {
   width: 100%;
-  height: 735px;
 
 }
 
@@ -177,37 +197,58 @@ header {
   padding: 40px 10px;
   background-color: var(--color-Whiter);
   color: var(--text-gray);
- 
 }
-.container-signUp h2{
-display: flex;
-justify-content: center;
- 
+.container-signUp h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 .box-form {
-  height: 603px;
+  height: 100%;
   background-color: var(--color-form);
   border-radius: 8px;
   margin-bottom: 28px;
+  padding: 52px 0 33px 0;
 }
-.box-input-form { 
-display: flex;
-flex-direction: column;
-align-items: center;
+.box-input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.box-input-form input{
+.box-input-form input {
+  border-radius: 4px;
+  width: 17.5rem;
+  height: 50px;
+  padding: 13px 22px;
+  border: 1px solid var(--text-gray);
+  margin-bottom: 20px;
+}
 
+.preferred-platform-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.preferred-platform{
+  width:17.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
 
-border-radius: 4px;
+#ctrl-news{
+  margin: 30px 0 38px 0;
+}
 
-  }
 .button-clear {
   list-style: none;
   display: flex;
   justify-content: center;
   width: 244px;
   height: 67px;
+  margin-top: 20px ;
 }
 
 .button-clear input {
@@ -220,27 +261,28 @@ border-radius: 4px;
   border-radius: 8px;
   border: 1px solid var(--color-red);
 }
-
-
-.box-form div {
-
-
+.box-form-button{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
 }
 
 footer {
   background-color: var(--color-footer);
   color: var(--color-Whiter);
+  padding: 28px;
 }
 
 .container-footer {
-  width: 1200px;
-  max-width: 990px;
-  height: 190px;
+  /*width: 1200px;*/
+  /*max-width: 990px;*/
+  height: 302px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  /*justify-content: space-between;*/
+  /*align-items: center;*/
+  justify-content: center;
 }
 
 .form-container-footer {
@@ -253,4 +295,32 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--color-Whiter);
+}
+
+@media(min-width: 1200px ) {
+
+.null-px {
+   font-size: 14px;
+}
+
+.container-header li {
+  margin: 0 29px 0 0; 
+
+}
+.box-gamer-aling-center {
+justify-content: center;
+}
+
+footer{
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-footer {
+  width: 1200px;
+  max-width: 990px;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
 }

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="nav-container">
         <nav class="container">
             <div class="container-header">
                 <div>
@@ -18,9 +18,9 @@
                 </div>
                 <div>
                     <ul class="menu-items">
-                        <!-- <li><a href="#news">Noticias</a></li> -->
-                        <!-- <li><a href="#games">Jogos</a></li>
-                            <li><a href="#signUp">Inscreva-se</a></li> -->
+                        <li class="null-px"><a href="#news">Noticias</a></li>
+                        <li class="null-px"><a href="#games">Jogos</a></li>
+                        <li class="null-px"><a href="#signUp">Inscreva-se</a></li>
                         <li><img src="img/User.svg" alt="Usuario"></li>
                     </ul>
                 </div>
@@ -72,7 +72,8 @@
                         optio
                         error! Vitae perspiciatis voluptatem sequi nostrum
                         necessitatibus culpa fuga ...
-                        <h5>Ler mais...<h5>
+                    </article>
+                    <h5>Ler mais...</h5>
                 </div>
 
                 <div class="box-news">
@@ -116,7 +117,9 @@
                         optio
                         error! Vitae perspiciatis voluptatem sequi nostrum
                         necessitatibus culpa fuga ...
-                        <h5>Ler mais...<h5>
+                    </article>
+                    <h5>Ler mais...</h5>
+
                 </div>
                 <div class="button">
                     <input type="button" value="Carregar mais">
@@ -129,42 +132,52 @@
                 <div>
                     <h2>Jogos</h2>
                 </div>
-                <div class="box-gamer">
-                    <div>
-                        <img src="img/jogo1.svg" alt="Horizon Forbidden West">
-                    </div>
-                    
-                    <div class="content-box">
-                        <div >
-                            <h3>Horizon Forbidden West</h3>
-                            <p class="score-text"> <span class="Green-color "> De</span> Sony Interactive Entsertainment</p>
-                            <p class="Green-color score">9.7</p>
+                <div class="box-gamer-aling">
+                    <div class="box-gamer-aling-center">
+                        <div class="box-gamer">
+                            <div>
+                                <img src="img/jogo1.svg" alt="Horizon Forbidden West">
+                            </div>
+
+                            <div class="content-box">
+                                <div>
+                                    <h3>Horizon Forbidden West</h3>
+                                    <p class="score-text"> <span class="Green-color "> De</span> Sony Interactive
+                                        Entsertainment
+                                    </p>
+                                    <p class="Green-color score">9.7</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-gamer">
-                    <div>
-                        <img src="img/jogo1.svg" alt="Horizon Forbidden West">
-                    </div>
-                    
-                    <div class="content-box">
-                        <div>
-                            <h3>Horizon Forbidden West</h3>
-                            <p class="score-text"> <span class="Green-color "> De</span> Sony Interactive Entsertainment</p>
-                            <p class="Green-color score">9.7</p>
+                        <div class="box-gamer">
+                            <div>
+                                <img src="img/jogo1.svg" alt="Horizon Forbidden West">
+                            </div>
+
+                            <div class="content-box">
+                                <div>
+                                    <h3>Horizon Forbidden West</h3>
+                                    <p class="score-text"> <span class="Green-color "> De</span> Sony Interactive
+                                        Entsertainment
+                                    </p>
+                                    <p class="Green-color score">9.7</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="box-gamer">
-                    <div>
-                        <img src="img/jogo1.svg" alt="Horizon Forbidden West">
-                    </div>
-                    
-                    <div class="content-box">
-                        <div>
-                            <h3>Horizon Forbidden West</h3>
-                            <p class="score-text"> <span class="Green-color"> De</span> Sony Interactive Entsertainment</p>
-                            <p class="Green-color score">9.7</p>
+                        <div class="box-gamer">
+                            <div>
+                                <img src="img/jogo1.svg" alt="Horizon Forbidden West">
+                            </div>
+
+                            <div class="content-box">
+                                <div>
+                                    <h3>Horizon Forbidden West</h3>
+                                    <p class="score-text"> <span class="Green-color"> De</span> Sony Interactive
+                                        Entsertainment
+                                    </p>
+                                    <p class="Green-color score">9.7</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,48 +192,51 @@
                     <form action="Registro-html">
                         <div class="box-input-form">
                             <div>
-                                <input name="name" type="text" placeholder="Nome
-                                        Completo">
+                                <input name="name" type="text" placeholder="Nome Completo">
                             </div>
-    
+
                             <div>
                                 <input name="email" type="email" placeholder="Email">
                             </div>
                         </div>
 
-
-                        <div>
-                            <label for="ctrl-plataform">Qual sua plataforma
-                                preferida?</label>
-                            <div>
-                                <input type="radio" name="plataform1" id="ctrl-plataform-1">
-                                <label for="ctrl-plataform-1">PC</label>
-                            </div>  
+                        <div class="preferred-platform-form">
+                            <div class="preferred-platform">
+                                <label for="ctrl-plataform">Qual sua plataforma
+                                    preferida?</label>
                                 <div>
-                                <input type="radio" name="plataform2" id="ctrl-plataform-2">
-                                <label for="ctrl-plataform-2">Xbox</label>
-                            </div>
+                                    <input type="radio" name="plataform1" id="ctrl-plataform-1">
+                                    <label for="ctrl-plataform-1">PC</label>
+                                </div>
                                 <div>
-                                <input type="radio" name="plataform3" id="ctrl-plataform-3">
-                                <label for="ctrl-plataform-3">Playstation</label>
-                            </div>
+                                    <input type="radio" name="plataform2" id="ctrl-plataform-2">
+                                    <label for="ctrl-plataform-2">Xbox</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="plataform3" id="ctrl-plataform-3">
+                                    <label for="ctrl-plataform-3">Playstation</label>
+                                </div>
 
-                            <div>
-                                <label for="ctrl-news"></label>
-                                <div id="ctrl-news">
-                                    <input type="checkbox" name="news" id="ctrl-news1">
-                                    <label for="ctrl-news1">Desejo receber
-                                        novidades.</label>
+                                <div>
+                                    <label for="ctrl-news"></label>
+                                    <div id="ctrl-news">
+                                        <input type="checkbox" name="news" id="ctrl-news1">
+                                        <label for="ctrl-news1">Desejo receber
+                                            novidades.</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="button">
-                            <input type="submit" value="Enviar">
+
+                        <div class=" box-form-button">
+                            <div class="button">
+                                <input type="submit" value="Enviar">
+                            </div>
+                            <div class="button-clear">
+                                <input type="reset" value="Limpar">
+                            </div>
                         </div>
-                       <div class="button-clear">
-                        <input type="reset" value="Limpar">
-                       </div >
-                        
+
                     </form>
                 </div>
             </div>
