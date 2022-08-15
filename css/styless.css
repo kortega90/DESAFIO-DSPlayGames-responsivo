@@ -149,6 +149,7 @@ font-size: 0;
 .box-gamer-aling-center{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 }
 
 .box-gamer {
@@ -307,9 +308,9 @@ footer a {
   margin: 0 29px 0 0; 
 
 }
-.box-gamer-aling-center {
+/*.box-gamer-aling-center {
 justify-content: center;
-}
+}*/
 .box-input-form input {
   width: 642px;
 }
